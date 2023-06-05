@@ -1,0 +1,76 @@
+<div class="container-fluid p-3 p-md-5 {{section.class}}">
+  <h3 class="display-2 lh-1 fw-bold mb-5">{{section.financial-title}}</h3>
+  {% for item in section.financial_highlights %}
+  <div class="mt-5 p-5 bg-opacity-10" style="background-color: {{item.color}}">
+    <div class="h3 fw-bold py-3 d-inline text-primary">{{item.title}}</div>
+    <div class="d-inline py-3">{{item.currency}}</div>
+    <div class="row mt-3">
+      <div class="col-md-1 justify-content-center">
+        <img src={{item.icon}} class="img-fluid mb-3" alt="">
+      </div>
+      <div class="col-md-5 fw-bold baladna-text">{{item.text | markdownify}}</div>
+      <div class="col-md-4">
+        <div class="graphs_container">
+          <div class="row justify-content-between">
+            {% for value in item.graphs %}
+            <div class="col">
+              {{value.colors.to_json}}
+              <div id="{{value.id}}" class="graph w-100" data-name="{{value.title}}" data-append="{{value.append}}"
+                data-colors='{{value.colors}}' data-values='{{value.values}}' style="height:200px;"></div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 ">
+        <div class="bg-primary bg-opacity-10">
+          <div class="row p-3">
+            <div class="col-md-12 h3 fw-bold text-center">{{item.number}}</div>
+            <div class="col-md-12">
+              <img src={{item.number_icon}} class="img-fluid mb-3" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {%endfor%}
+
+
+  <h3 class="display-2 pt-5 mt-5 lh-1 fw-bold mb-5">{{section.operating-title}}</h3>
+  {% for item in section.operating_highlights %}
+  <div class="mt-5 p-5" style="background-color: {{item.color}}">
+    <div class="h3 fw-bold p-3 d-inline text-primary">{{item.title}}</div>
+    <div class="d-inline p-3 ">{{item.currency}}</div>
+    <div class="row mt-3">
+      <div class="col-md-1 justify-content-center">
+        <img src={{item.icon}} class="img-fluid mb-3" alt="">
+      </div>
+      <div class="col-md-5 fw-bold ">{{item.text | markdownify}}</div>
+      <div class="col-md-4">
+        <div class="graphs_container">
+          <div class="row justify-content-between">
+            {% for value in item.graphs %}
+            <div class="col">
+              {{value.colors.to_json}}
+              <div id="{{value.id}}" class="graph w-100" data-name="{{value.title}}" data-append="{{value.append}}"
+                data-colors='{{value.colors}}' data-values='{{value.values}}' style="height:200px;"></div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="bg-primary bg-opacity-10 text-center">
+          <div class="row p-3">
+            <div class="col-md-12 h3 fw-bold">{{item.number}}</div>
+            <div class="col-md-12">
+              <img src={{item.number_icon}} class="img-fluid mb-3" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {%endfor%}
+</div>

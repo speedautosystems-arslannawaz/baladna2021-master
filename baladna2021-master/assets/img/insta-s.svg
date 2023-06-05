@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.0" id="Layer_1" width="27" height="27"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7.8 7.4" enable-background="new 0 0 7.8 7.4" xml:space="preserve">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M7.3,5.9C7.3,6.5,6.8,7,6.2,7H1.6C1,7,0.5,6.5,0.5,5.9V1.6C0.5,1,1,0.5,1.6,0.5h4.5c0.6,0,1.1,0.5,1.1,1.1V5.9z"/>
+	<circle fill="none" stroke="#000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="3.9" cy="3.8" r="1.5"/>
+	<line fill="none" stroke="#000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="5.9" y1="1.8" x2="6" y2="1.8"/>
+</svg>

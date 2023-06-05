@@ -1,0 +1,35 @@
+{% if page.lang == "ar" %}
+{% assign assets = "../"%}
+{% else %}
+{% assign assets = ""%}
+{% endif %}
+<div id="container">
+  <div class="section slider">
+    <div class="content">
+      <h1 class="reveal"> {{section.title}} </h1>
+
+      <div class="swiper item-wrap">
+        <div class="swiper-wrapper">
+          {% for item in section.slides %}
+          <div class="swiper-slide">
+            <figure class="item" data-article="article-{{forloop.index}}">
+              <span></span>
+              <a href="{{item.url}}" class="item_img"
+                style="background-image: url(assets/img/{{item.img}}); background-position: {{item.img_position}};">
+              </a>
+              <!-- <img class="item_img" style="object-position: center;" src="assets/img/{{item.img}}" alt="" /> -->
+              <figcaption class="item_caption">
+                <h2 class="item_caption-title fw-bold">{{item.title}}</h2>
+                <p class="item_caption-description fw-light text-white">Read More</p>
+              </figcaption>
+            </figure>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>

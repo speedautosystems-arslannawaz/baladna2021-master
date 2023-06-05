@@ -1,0 +1,49 @@
+{% assign lang = site.active_lang %}
+{% if lang == "ar" %}
+{% assign split_by = "words"%}
+{% else %}
+{% assign split_by = "chars"%}
+{% endif %}
+<div class="loading">
+  <div class="cover ">
+    <div class="row">
+      <div class="col-md-6 bg-white">
+
+        <div class="row py-5 px-4 ">
+          <div class="col-md-12  bg-white">
+            <div class="loading_logo text-end">
+              <img class="logo mb-5" src="assets/img/{{site.logo}}">
+            </div>
+          </div>
+          <div class="col-md-12  bg-white">
+            <div class="copy">
+              <div data-splitting="{{split_by}}" class="line_1 display-6 fw-light">
+                {{site.data.shared.theme_line_1}}
+              </div>
+              <div data-splitting="{{split_by}}" class="line_2 display-6 fw-bold">
+                {{site.data.shared.theme_line_2}}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+
+        <div class="header_bg d-flex flex-column vh-100 ">
+          <div> <img src="assets/img/cover1.jpg" class="img-fluid mb-auto"> </div>
+          <div class="h-100">
+            <h3 data-splitting="{{split_by}}" class="ar mb-0 fw-light p-4 bg-primary d-inline-block text-white h-100">
+              {{site.data.shared.report}}
+            </h3>
+          </div>
+          <div> <img src="assets/img/cover2.jpg" class="img-fluid mt-auto"> </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="loading_copy display-1 fw-normal"> <a class="skip" href="home.html">Skip</a> </div>
+</div>
+</div>

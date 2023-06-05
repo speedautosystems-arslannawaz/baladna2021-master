@@ -1,0 +1,14 @@
+---
+layout: base
+---
+{% if page.url != "/index.html" %}
+{% include header.html site=site page=page %}
+{% endif %}
+
+<main>
+  {% for section in page.sections %}
+  {% include {{ section.file_name }} section=section site=site page=page %}
+  {% endfor %}
+</main>
+
+{{ content }}

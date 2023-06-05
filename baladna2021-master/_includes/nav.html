@@ -1,0 +1,135 @@
+{% assign navigation = site.data.menu %}
+{% assign videos = site.data.videos %}
+{% assign videos_title = site.data.shared.video_library_title %}
+
+<nav class="navbar navbar-expand-lg navbar-light mini-header bg-light py-0">
+  <div class="container-fluid">
+    <ul class="navbar-nav flex-row ms-auto">
+
+      <li class="nav-item">
+        <a class="nav-link mx-1" target="_blank" href="https://www.instagram.com/baladnaco/?hl=en">
+          <img src="assets/img/insta-s.svg" alt="" style="width:18px;">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-1" target="_blank" href="https://twitter.com/baladnaco">
+          <img src="assets/img/twitter-s.svg" alt="" style="width:18px;">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-1" target="_blank" href="https://www.linkedin.com/company/baladna-dairy/">
+          <img src="assets/img/in-s.svg" alt="" style="width:18px;">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-1" target="_blank" href="https://www.youtube.com/channel/UC4n_hNzhalO7ypYYQQkpEVg">
+          <img src="assets/img/youtube-s.svg" alt="" style="width:18px;">
+        </a>
+      </li>
+      <!-- <li class="nav-item px-md-2 ps-2">
+        <a class="nav-link text-info" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">
+          <img src="assets/img/btn-play-dark.svg" alt="" style="width:18px;" class="img-fluid mt-n2">
+          <span>{{videos_title}}</span>
+        </a>
+      </li> -->
+      <li class="nav-item px-md-2 ps-2">
+        <a class="nav-link dc" href=download-center title="Download Center"></a>
+      </li>
+      <li class="nav-item px-md-2 pe-2">
+        {% for tongue in site.languages %}
+        {% if tongue != site.active_lang %}
+        <a class="nav-link lang-switch"
+          href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">
+          {% if site.active_lang  == "en" %}
+          العربية
+          {% else%}
+          {{ tongue | strip | upcase }}
+          {% endif %}
+        </a>
+        {% endif %}
+        {% endfor %}
+      </li>
+    </ul>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light pb-0">
+  <div class="container-fluid">
+    <div class="col-2">
+      <a class="navbar-brand" href="overview.html">
+        <img class="logo mb-3 h-50 w-50 image-fluid" src="assets/img/{{site.logo}}" alt="">
+      </a>
+    </div>
+
+    <!-- <div class="col-3 text-end">
+      <buton class="btn btn-outline-light rounded-0 me-3">Download Center </buton>
+    </div> -->
+
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav justify-content-between w-100">
+
+        {% for item in navigation %}
+        <li class="nav-item" {% if navigation.url == page.url %} class="active" {% endif %}><a
+            href="{{ navigation.url }}">{{ navigation.text }}
+          </a>
+        </li>
+
+        <a class="nav-link pb-4 {% if page.url contains item.url %} active {% endif %}" aria-current="page"
+          href="{{item.url}}">{{item.title}} </a>
+        </li>
+        {% endfor %}
+
+      </ul>
+
+    </div>
+
+    <!-- <ul class="navbar-nav flex-row">
+      <li class="nav-item ps-md-5 ps-2">
+        <a class="nav-link dc" href=download-center title="Download Center"></a>
+      </li>
+      <li class="nav-item pe-md-5 pe-2">
+        <a class="nav-link" href="#">ع</a>
+      </li>
+
+    </ul> -->
+
+  </div>
+</nav>
+
+
+<!-- <div class="offcanvas offcanvas-end assets_dev bg-secondary p-0" tabindex="-1" id="offcanvasRight"
+  aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-body p-0">
+
+    <button type="button" class="btn-close text-reset position-absolute" data-bs-dismiss="offcanvas"
+      aria-label="Close"></button>
+
+    <div class="section p-3 p-md-5 position-relative">
+      <div class="display-6 lh-1 fw-normal col-md-6 mb-5 text-white"> {{videos_title}} </div>
+
+      <div class="row">
+        {% for item in videos %}
+        <div class="col-md-6 mb-4">
+          <div class="ratio ratio-16x9 ">
+            <a href="javascript:void(0)" class="video-thumb ratio ratio-16x9 w-100"
+              style="background-image: url(assets/img/thumbs/{{item.thumb}});" data-video-url="{{item.url}}"
+              data-bs-toggle="modal" data-bs-target="#videoModal">
+              <span class="lh-1 display-5">
+                {{item.title}}
+              </span>
+            </a>
+          </div>
+
+        </div>
+        {% endfor %}
+
+
+      </div>
+
+    </div>
+  </div>
+</div> -->

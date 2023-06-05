@@ -1,0 +1,85 @@
+- name:   ”بلدنا“ في سطور 
+  chapters:
+    - title: أبرز ملامح الأداء المالي
+      file: Financial Highlights.pdf
+      
+    - title: أبرز ملامح الأداء التشغيلي
+      file: Operating Highlights.pdf
+
+- name: التقرير الاستراتيجي
+  chapters:
+    - title: كلمة رئيس مجلس الإدارة
+      file: Chairman Statement.pdf
+      
+    - title: خلق قيمة مضافة مستدامة جوهر إبداعاتنا
+      file: Sustainable value creation through innovation.pdf
+
+    - title: تقرير الرئيس التنفيذي
+      file: CEO Review.pdf
+
+    - title: كلمة المدير المالي التنفيذي
+      file: CFO Message.pdf
+    
+    - title: الركائز الاستثمارية للشركة
+      file: Our Investment Case.pdf
+    
+    - title: نموذج العمل التجاري
+      file: Business Model.pdf
+
+    - title: الاستراتيجية
+      file: Strategy.pdf
+
+    - title: المراجعة التشغيلية
+      file: Operating Review.pdf
+
+    - title: إدارة المخاطر
+      file: Risk Management.pdf
+    
+    - title: الموظفون
+      file: Our People.pdf
+
+    - title: الاستدامة
+      file: Sustainability.pdf
+
+- name: تقرير الحوكمة
+  chapters:
+    - title: كلمة رئيس مجلس الإدارة
+      file: Chairman Foreword.pdf
+      
+    - title: مجلس الإدارة
+      file: Board of Directors.pdf
+
+    - title: تقرير الحوكمة
+      file: Corporate Governance Report.pdf
+
+    - title: تقرير مجلس الإدارة حول أنظمة الرقابة الداخلية على إعداد التقارير المالية
+      file: Director report on internal controls over financial reporting(ICOFR).pdf
+    
+    - title: تقرير مدقق الحسابات المستقل حول الإلتزام بقانون هيئة قطر للأسواق المالية والتشريعات ذات الصلة بما فيها نظام حوكمة الشركات والكيانات القانونية المدرجة بالسوق الرئيسية
+      file: Independent Assurance Report.pdf
+    
+    - title: تقرير مدقق الحسابات المستقل حول ملائمة تصميم وتطبيق وفعالية تشغيل أنظمة الرقابة الداخلية على إعداد التقارير المالية
+      file: Independent Assurance Report on the Suitability.pdf
+
+- name: البيانات المالية 
+  chapters:
+    - title: تقرير المراجعة لمدقق الحسابات المستقل
+      file: Independent Auditor Report.pdf
+
+    - title: بيان الربح والدخل الشامل الآخر الموحّد
+      file: Consolidated Statement of Profit and Other Comprehensive Income.pdf
+
+    - title: بيان المركز المالي الموحّد
+      file: Consolidated Statement of Financial Position.pdf
+    
+    - title: بيان التغيّرات في حقوق المساهمين الموحّد
+      file: Consolidated Statement of Changes in Shareholders equity.pdf
+    
+    - title: بيان التدفقات النقدية الموحّد
+      file: Consolidated Statement of Cash Flows.pdf
+    
+    - title: إيضاحات حول البيانات المالية الموحّدة
+      file: Notes to the Consolidated Financial Statements.pdf
+
+    
+  

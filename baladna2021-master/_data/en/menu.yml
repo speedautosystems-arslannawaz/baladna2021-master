@@ -1,0 +1,27 @@
+- title: Overview
+  url: overview.html
+  photo: at-a-glance.png
+
+- title: Leadership
+  url: leadership.html
+  photo: leadership.png
+
+- title: Strategy
+  url: strategy.html
+  photo: strategy.png
+
+- title: Business Model
+  url: business-model.html
+  photo: operational-model.png
+
+- title: Download Center
+  url: download-center.html
+  photo: operational-review.png
+
+# - title: Financial Review
+#   url: "financial-review"
+#   photo: financial-review.png
+  
+# - title: Corporate Review
+#   url: "corporate-governance"
+#   photo: corporate-governance.png

@@ -1,0 +1,63 @@
+<div class="section py-5 position-relative {{section.class}}">
+  <div class="p-5">
+    <div class="h3 fw-normal"> {{section.name}}</div>
+    <p>{{section.title}}</p>
+    <p class="fw-bold">{{section.drivers_title}}</p>
+    <div class="row">
+      {% for item in section.drivers%}
+      <div class="col-md-3 mt-4">
+        <dtv class="mb-2 text-center">
+          <img src={{item.icon}} class="img-fluid mb-3" alt="">
+        </dtv>
+        <p>{{item.title}}</p>
+      </div>
+      {% endfor %}
+
+    </div>
+
+
+    <p>{{section.drivers_text | markdownify}}</p>
+
+    <h4 class="h3 mt-5 mb-5 bg-info w-50 text-primary p-3 fw-bold bg-opacity-10"
+      style="background:  linear-gradient(to right, rgba(218, 231, 239, .5) 0%, rgba(255, 255, 255, .5) 80%);">
+      {{section.pillars_title}}</h4>
+
+
+    <div class="row g-3">
+      {% for item in section.pillars%}
+      <div class="col-md-6">
+        <div class="h-100 p-3" style="background-color:{{item.color}}">
+          <img src={{item.icon}} class="img-fluid mb-3" alt="">
+          <h4 class="text-left fw-bold text-primary mb-1">{{item.name}}</h4>
+          <p class="fw-bold">{{item.title}}</p>
+          <div class=" text-left strategy-copy">
+            {{item.text | markdownify}}
+          </div>
+        </div>
+      </div>
+      {% endfor%}
+    </div>
+
+    <!-- <div class=" swiper strategy_swiper item-wrap">
+      <div class="swiper-wrapper">
+        {% for item in section.pillars%}
+        <div class="swiper-slide">
+          <div class="px-md-5 text-center">
+            <div class="row">
+              <div class="col-md-12 mb-2 justify-content-center">
+                <img src={{item.icon}} class="img-fluid mb-3" alt="">
+              </div>
+            </div>
+            <h4 class="text-left fw-bold text-primary mb-1">{{item.name}}</h4>
+            <p class="fw-bold">{{item.title}}</p>
+            <div class=" text-left strategy-copy">
+              {{item.text | markdownify}}
+            </div>
+          </div>
+        </div>
+        {% endfor%}
+      </div>
+      <div class="swiper-pagination text-start px-5 fw-bold h4"></div>
+    </div> -->
+  </div>
+</div>

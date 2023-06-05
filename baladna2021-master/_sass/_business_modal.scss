@@ -1,0 +1,404 @@
+// .down-detail {
+//   background: #fff;
+//   display: none;
+//   padding: 5rem 14rem 20rem 14rem;
+//   width: 100vw;
+//   position: absolute;
+//   top: 100vh;
+//   left: 0;
+//   font-size: 1.8rem;
+
+//   @media (max-width: 992px) {
+//     padding: 5rem 4rem 0 4rem;
+//   }
+
+//   h1 {
+//     display: block;
+//     position: relative;
+//     font-size: 5rem;
+//     line-height: 50px;
+//     color: $dark_blue;
+//     // padding: 25rem 0 5rem 0;
+//     padding: 10rem 0 4rem 0rem;
+
+//     img {
+//       position: absolute;
+//       top: 0;
+//       right: -140px;
+//       max-width: 100px;
+//       transform: scaleX(-1);
+//     }
+//   }
+// }
+
+
+// .BusinessReview-detail {
+//   // background-color: ;
+//   padding: 0 0 20rem 0;
+
+
+//   h1 {
+//     color: $dark_blue;
+//     padding: 5rem 4rem 0 14rem;
+
+//     @media (max-width: 992px) {
+//       padding: 5rem 4rem 0 4rem;
+//     }
+//   }
+
+//   // img {
+//   //   width: 100%;
+//   //   margin-top: 10rem;
+//   // }
+
+//   // &:before {
+//   //   content: '';
+//   //   position: absolute;
+//   //   left: -10px;
+//   //   top: 20rem;
+//   //   width: 142px;
+//   //   height: 300px;
+//   //   background-size: contain;
+//   //   background-position: center;
+//   //   background-repeat: no-repeat;
+//   //   background-image: url("../images/side curve.svg");
+//   // }
+
+//   .value {
+//     background-color: #C5D6E9 !important;
+//     margin: 0rem auto;
+//     padding: 4rem 3rem;
+//     border-radius: 3rem;
+//     height: 100%;
+//     opacity: 0;
+//     transform: translate(0, 30px);
+//     transition: all 0.8s ease;
+
+//     h2 {
+//       margin-bottom: 0;
+//     }
+
+//     &.show {
+//       opacity: 1;
+//       transform: translate(0, 0);
+//     }
+//   }
+// }
+
+
+
+
+
+.segments {
+  color: #2972bd;
+  max-width: 90vw;
+  margin: 5rem auto;
+
+  h1,
+  h2,
+  h3 {
+    font-weight: bold;
+    color: $primary;
+  }
+
+  .box {
+    background-color: #C5D6E9;
+    padding: 3rem 2rem;
+    // border-radius: 3rem;
+    height: 100%;
+
+    h3 {
+      margin: 2rem 0 0rem;
+    }
+
+    // ul {
+    //   font-size: 2.2rem;
+    // }
+
+    opacity: 0;
+    transform: translate(0, 30px);
+    transition: all .8s ease;
+
+    &.show {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+
+  }
+
+}
+
+
+.BusinessReview-detail {
+  // background-color: ;
+  padding: 0 0 20rem 0;
+
+
+  h1 {
+    color: $dark_blue;
+    padding: 5rem 4rem 0 14rem;
+
+    @media (max-width: 992px) {
+      padding: 5rem 4rem 0 4rem;
+    }
+  }
+
+  .value {
+    background: linear-gradient(to right, rgba(218, 231, 239, .5) 0%, rgba(255, 255, 255, .5) 80%) !important;
+    margin: 0rem auto;
+    // border-radius: 3rem;
+    height: 100%;
+    opacity: 0;
+    transform: translate(0, 30px);
+    transition: all 0.8s ease;
+
+    &.show {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.vmv {
+  .box {
+    background-color: #D6ECD9;
+  }
+}
+
+.h-ico {
+  height: 80px;
+  padding: 0 10px;
+}
+
+
+.bm-circle {
+  z-index: 99;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: calc(100% + 100px);
+  transform: translate(-50%, - 50%);
+
+  img {
+    transition: all 1s ease;
+    animation: rotate 30s infinite linear;
+    transform-origin: center;
+
+    &:hover {
+      animation: none;
+    }
+  }
+
+  .cls-1,
+  .cls-7,
+  .cls-8 {
+    fill: none;
+  }
+
+  .cls-1,
+  .cls-2,
+  .cls-7 {
+    stroke: #fff;
+  }
+
+  .cls-1 {
+    stroke-width: 4px;
+  }
+
+  .cls-2 {
+    fill: #1b8ece;
+    stroke-width: 2px;
+  }
+
+  .cls-3,
+  .cls-5,
+  .cls-6 {
+    fill: #fff;
+  }
+
+  .cls-4 {
+    fill: #004a98;
+  }
+
+  .cls-10,
+  .cls-11,
+  .cls-5,
+  .cls-6,
+  .cls-9 {
+    isolation: isolate;
+  }
+
+  .cls-5 {
+    font-size: 26px;
+    font-family: "VAG-Rounded";
+    font-weight: 500;
+  }
+
+  .cls-6 {
+    font-size: 18px;
+  }
+
+  .cls-10,
+  .cls-11,
+  .cls-6 {
+    font-family: "VAG-Rounded";
+  }
+
+  .cls-10 {
+    font-size: 50.598px;
+  }
+
+  .cls-10,
+  .cls-11,
+  .cls-12 {
+    fill: #1698d6;
+  }
+
+
+  .cls-11 {
+    font-size: 24.426px;
+  }
+}
+
+.segments-box {
+  background-color: #EBEDED !important;
+}
+
+
+.pillars {
+  margin: 6vw auto;
+
+  >div {
+    &:first-child {
+      .box {
+        padding-right: 70px;
+      }
+    }
+
+    &:last-child {
+      .box {
+        padding-left: 70px;
+      }
+    }
+  }
+
+  .fade-left {
+    opacity: 0;
+    transform: translate(-30px, 0);
+    transition: all .8s ease;
+
+    &.show {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+
+  }
+
+  .fade-right {
+    opacity: 0;
+    transform: translate(30px, 0);
+    transition: all .8s ease;
+
+    &.show {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+
+  }
+}
+
+.bd-ico {
+  max-height: 60px;
+  margin-right: 2rem;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+
+}
+
+
+.inputs {
+  max-width: 90vw;
+  margin: 10rem auto 5rem;
+  background-color: $secondary;
+  color: #fff;
+
+  h1,
+  h2,
+  h3 {
+    color: $primary;
+    font-weight: bold;
+  }
+
+  h3 {
+    color: #fff;
+  }
+
+
+
+  .input-accordians {
+    padding: 5.5rem;
+
+    .panel-title {
+      a {
+        color: #fff;
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  opacity: 0;
+  transform: translate(0, 30px);
+  transition: all .8s ease;
+
+  &.show {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+}
+
+.bm-icon {
+  max-height: 80px;
+  margin-top: 5rem;
+  margin-right: 4rem;
+  margin-left: auto;
+}
+
+.call-out {
+  background-color: rgba(255, 255, 255, .2);
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 2.5rem;
+}
+
+.business-review {
+
+  h2,
+  h1,
+  h3 {
+    font-weight: bold;
+    color: $primary;
+  }
+
+  h5 {
+    font-weight: bold;
+  }
+}
+
+.value {
+  max-width: 90vw;
+  margin: 10rem auto 5rem;
+  color: #fff;
+  opacity: 0;
+  transform: translate(0, 30px);
+  transition: all .8s ease;
+  background: linear-gradient(to right, rgba(218, 231, 239, .5) 0%, rgba(255, 255, 255, .5) 80%) !important;
+}

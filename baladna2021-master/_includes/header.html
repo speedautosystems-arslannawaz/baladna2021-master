@@ -1,0 +1,23 @@
+{% assign lang = site.active_lang %}
+{% if lang == "ar" %}
+{% assign dir = 'left' %}
+{% else %}
+{% assign dir = 'right' %}
+{% endif %}
+<div class="header position-relative px-5">
+  <div class="header_bg" style="background-image: linear-gradient(to {{dir}}, rgb(0, 0, 0, .5) 0%, rgba(255, 255, 255, .5) 80%), 
+    url({{page.header.bg}}); background-blend-mode: multiply;">
+  </div>
+  <div class="header-copy">
+    <div class="position-relative text-white fw-normal ms-2 ms-md-5"> {{page.header.title}}</div>
+    <!-- <div class="position-absolute top-0 outlined fw-normal ms-5 "> {{page.header.title}} </div> -->
+
+    {% if page.url != "/download-center.html" %}
+    <a href="assets/img/pdfs/{{page.header.pdf}}" class="btn btn-lg btn-light ms-2 ms-md-5" download target="_blank">
+      {{site.data.shared.download_pdf}}
+    </a>
+    {%endif%}
+  </div>
+  <!-- <img class="header_a" src="assets/img/center_a.svg"> -->
+</div>
+<!-- <div class="position-absolute" style="z-index: -1;"> <img class="load_svg" src=""> </div> -->

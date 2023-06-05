@@ -1,0 +1,41 @@
+$nav_break_point: 1369px;
+$primary: #A22827;
+$secondary: #f1bc7b;
+$info: #08C2C2;
+$dark_blue: #111121;
+
+$bottom-color: #E1BBA5;
+$border-color: $bottom-color;
+$black: #000;
+
+$font-size-base: 1.25rem;
+$line-height-base: 1.4;
+$nav-link-font-size: 1.1rem;
+
+$navbar-light-color: rgba($black, 1);
+$navbar-light-hover-color: rgba($black, .6);
+$navbar-light-active-color: rgba($black, 1);
+
+$font-family-sans-serif: #{"/* rtl:insert:OoredooArabic, */"} VAG-Rounded,
+Helvetica Neue #{"/* rtl:insert:Arabic */"},
+// Cross-platform generic font family (default user interface font)
+system-ui,
+// Safari for macOS and iOS (San Francisco)
+-apple-system,
+// Chrome < 56 for macOS (San Francisco)
+BlinkMacSystemFont,
+// Windows
+"Segoe UI",
+// Android
+Roboto,
+// Basic web fallback
+Arial,
+// Linux
+"Noto Sans",
+// Sans serif fallback
+sans-serif,
+// Emoji fonts
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji" !default;

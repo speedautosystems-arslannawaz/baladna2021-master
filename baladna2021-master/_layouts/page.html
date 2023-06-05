@@ -1,0 +1,20 @@
+---
+layout: base
+---
+
+{% include header.html section=section site=site page=page %}
+
+<!-- Any Ready-to-Use sections -->
+{% for section in page.sections %}
+{% include {{ section.type }} section=section site=site page=page %}
+{% endfor %}
+
+<!-- include content as section -->
+{% assign content = content | strip_newlines %}
+{% if content != "" %}
+<section class="page-section {{ page.background_style }}">
+  <div class="container">
+    {{ content }}
+  </div>
+</section>
+{% endif %}

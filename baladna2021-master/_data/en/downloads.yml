@@ -1,0 +1,88 @@
+- name: OVERVIEW
+  chapters:
+    - title:  Financial Highlights
+      file: Financial Highlights.pdf
+      
+    - title: Operating Highlights
+      file: Operating Highlights.pdf
+
+- name: STRATEGIC REVIEW
+  chapters:
+    - title: Chairman’s Statement
+      file: Chairman Statement.pdf
+      
+    - title: Sustainable value creation through innovation
+      file: Sustainable value creation through innovation.pdf
+
+    - title: CEO’s Review
+      file: CEO Review.pdf
+
+    - title: CFO’s Review
+      file: CFO Message.pdf
+    
+    - title: Our Investment Case
+      file: Our Investment Case.pdf
+    
+    - title: Business Model
+      file: Business Model.pdf
+
+    - title: Strategy
+      file: Strategy.pdf
+
+    - title: Operating Review
+      file: Operating Review.pdf
+
+    - title: Risk Management
+      file: Risk Management.pdf
+    
+    - title: Our People
+      file: Our People.pdf
+
+    - title: Sustainability
+      file: Sustainability.pdf
+
+- name: GOVERNANCE
+  chapters:
+    - title: Chairman’s Foreword
+      file: Chairman Foreword.pdf
+      
+    - title: Board of Directors
+      file: Board of Directors.pdf
+
+    - title: Corporate Governance Report
+      file: Corporate Governance Report.pdf
+
+    - title: Director’s Report on Internal Controls Over Financial Reporting (ICOFR)
+      file: Director report on internal controls over financial reporting(ICOFR).pdf
+    
+    - title: Independent Assurance Report on the Compliance with
+        the QFMA’s Law and relevant legislations including the Governance
+        Code for Companies & Legal Entities Listed on the Main Market
+      file: Independent Assurance Report.pdf
+    
+    - title: Independent Assurance Report on the Suitability of the Design,
+        Implementation and Operating Effectiveness of ICOFR
+      file: Independent Assurance Report on the Suitability.pdf
+
+- name: FINANCIAL STATEMENTS
+  chapters:
+    - title: Independent auditor’s report
+      file: Independent Auditor Report.pdf
+
+    - title: Consolidated Statement of Profit and Other Comprehensive Income
+      file: Consolidated Statement of Profit and Other Comprehensive Income.pdf
+
+    - title: Consolidated Statement of Financial Position
+      file: Consolidated Statement of Financial Position.pdf
+    
+    - title: Consolidated Statement of Changes in Shareholders’ Equity Consolidated Statement of Cash Flows
+      file: Consolidated Statement of Changes in Shareholders equity.pdf
+    
+    - title: Consolidated Statement of Cash Flows
+      file: Consolidated Statement of Cash Flows.pdf
+    
+    - title: Notes to the Consolidated Financial Statements 
+      file: Notes to the Consolidated Financial Statements.pdf
+
+    
+  

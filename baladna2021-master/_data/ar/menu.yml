@@ -1,0 +1,27 @@
+- title: ”بلدنا“ في سطور 
+  url: overview.html
+  photo: at-a-glance.png
+
+- title:  قيادة الشركة 
+  url: leadership.html
+  photo: leadership.png
+
+- title: الاستراتيجية
+  url: strategy.html
+  photo: strategy.png
+
+- title: نموذج العمل التجاري
+  url: business-model.html
+  photo: operational-review.png
+
+- title: مركز التحميل
+  url: download-center.html
+  photo: operational-review.png
+
+# - title: الأداء المالي للمجموعة
+#   url: "financial-review"
+#   photo: financial-review.png
+  
+# - title: الحوكمة والأداء المؤسسي
+#   url: "corporate-governance"
+#   photo: corporate-governance.png

@@ -1,0 +1,93 @@
+{% assign download_list = site.data.downloads %}
+<div class="container-fluid">
+  <div class="download-modal">
+    <div class="row">
+      <div class="col-md-12">
+        <form action="#" id="download_form" data-lang="{{site.active_lang}}">
+          <div class="downlaod-header">
+            <div class="row my-5">
+              <div class="col-md-6">
+                <p class="lead"> {{section.title}} </p>
+              </div>
+              <div class="col-md-6 text-end">
+
+                <button class="btn btn-outline-primary m-2 rounded-0 btn-download download-selected">
+                  {{section.custom_title}}
+                </button>
+                <a href="assets/img/pdfs/{{section.full_pdf}}" class="btn btn-outline-primary rounded-0 m-2 btn-download" download
+                  target="_blank">
+                  {{section.full_title}}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="alert alert-primary d-none" role="alert">
+                <div class="spinner-border mx-4" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+                {{section.wait}}
+              </div>
+            </div>
+          </div>
+
+          <div class="row checkboxes">
+
+            {% for download_section in download_list %}
+            {% assign i = forloop.index %}
+
+            {% if i == 1 or i == 4 %}
+            <div class="col-md-6 col-xs-12 mb-4">
+              {% endif %}
+
+              <div class="download-section">
+                <div class="download-title mb-4">
+                  {% if download_section.name%}
+                  <h2>
+                    <input type="checkbox" id="section_{{i}}" class="check_{{i}}" name="chapter_pdf[]"
+                      value="management_review.pdf">
+                    <label for="section_{{i}}">{{download_section.name }}</label>
+                  </h2>
+                  {% endif %}
+
+
+                </div>
+                <ul class="check-section">
+                  {% for chapter in download_section.chapters %}
+                  <li>
+                    <input type="checkbox" id="pdf_{{i}}_{{forloop.index}}" class="check_{{i}}" name="section_pdf[]"
+                      value="{{chapter.file}}"> <label for="pdf_{{i}}_{{forloop.index}}">
+                      {{chapter.title}}
+
+                      {% if chapter.excel%}
+                      <a href="assets/xlsx/{{chapter.excel}}" title="{{chapter.excel}}" class="display-inline-block">
+                        <!-- <img src="assets/img/download-solid.svg" alt="" style="max-width: 15px;"> -->
+
+                        <!-- <img src="assets/img/file-excel-regular.svg" alt="" style="max-width: 15px;"> -->
+                        <img src="assets/img/file-excel-regular.svg" alt="" style="max-width: 22px;">
+                      </a>
+                      {% endif%}
+
+
+
+                    </label>
+
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% if i == 3 or i == 5 %}
+            </div>
+            {% endif %}
+
+            {% endfor %}
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
